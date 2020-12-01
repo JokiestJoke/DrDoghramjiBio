@@ -1,20 +1,22 @@
 /* nav bar code */
 body{
     margin: 0px;
+    background-color:whitesmoke;
 
 }
 #navBar{
+    z-index: 1;
+    position: fixed;
     top: 0;
     border-bottom: 2px solid black;
     width: 100%;
-    height: 100px;
+    height: 110px;
     background-color: #6270c2;
     margin: 0px;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    /* overflow: hidden; */
 }
 
 #navBarTitle{
@@ -28,7 +30,7 @@ body{
     text-align: center;
     flex-grow: 1;
     flex-shrink: 1;
-    width: 30%;
+    width: 20%;
 }
 
 .navBarItem{
@@ -50,37 +52,63 @@ body{
     border-radius: 30px
 }
 
-#contentBox{
-    /* background-color: blue; */
+#majorContentContainer{
+    margin-top: 110px;
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: row nowrap;
     justify-content: space-around;
-    background-image: url("../images/DoghramjiBanner.jpg");
+    background-image: url("../images/contentBanerr.jpg");
     height: 100%;
     width: 100%;
     background-repeat: no-repeat;
+    border-bottom: 2px solid black;
 }
 
-.contentBoxItem{
+#majorContentContentItem{
+    text-align: left;
+    position: relative;
     margin: 10px;
+    padding: 10px;
     font-size: 50px;
-    padding: 0px;
-    margin: 0px;
     color: white;
-    width: 400px;
-    flex-flow: column wrap;
-    border: 2px solid red;
+    width: 60%;
+    border: 2px solid whitesmoke;
     background-color: grey;
     opacity: .9;
-
 }
 
-.flexImage{
+
+
+.contentImage{
+    margin: 10px;
     border-radius: 25%;
     border: 1px solid black;
     height: 30%;
     width: 25%;
 }
+
+#imgText{
+    top: 25%;
+    left: 8.5%;
+    position: absolute;
+    color: white;
+    font-size: 40px;
+    font-family: 'Times New Roman', Times, serif;
+    visibility: hidden;
+}
+
+.flexBoxContainer{
+    display: flex;
+    height: 400px;
+    width: 100%;
+}
+
+.flexBoxItem{
+
+
+}
+
+
 
 
 
