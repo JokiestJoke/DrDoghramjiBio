@@ -1,9 +1,10 @@
-/* nav bar code */
+/* general css code */
 body{
     margin: 0px;
     background-color:whitesmoke;
 
 }
+/* nav bar code */
 #navBar{
     z-index: 1;
     position: fixed;
@@ -52,6 +53,7 @@ body{
     border-radius: 30px
 }
 
+/* major content container code */
 #majorContentContainer{
     margin-top: 110px;
     display: flex;
@@ -77,8 +79,6 @@ body{
     opacity: .9;
 }
 
-
-
 .contentImage{
     margin: 10px;
     border-radius: 25%;
@@ -97,27 +97,29 @@ body{
     visibility: hidden;
 }
 
+/* General FlexBox Code */
 .flexBoxContainer{
+    margin: 10px auto auto auto;
+    justify-content: space-around;
     display: flex;
-    height: 400px;
-    width: 100%;
+    height: 500px;
+    width: 75%;
+    border: 2px solid red;
+    flex-flow: row wrap;
 }
 
 .flexBoxItem{
-
-
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    height: auto;
+    width: 30%;
+    background-color: blue;
+    border: 2px solid red;
 }
 
+footer{
+    background-color: black;
+}
 
-
-
-
-
-
-
-
-/* .image{
-    width: 25px;
-    text-align: left;
-    display: flex;
-} */
